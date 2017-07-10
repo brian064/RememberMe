@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  color: #505050;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  background-color: #e6e6e6;
+  transition: all 0.5s ease-in-out;
+  /*border-top: 25px solid #303030;*/
+}
+
+.blackbar {
+  height: 25px;
+  width: 100%;
+  background-color: #303030;
+}
+
+.red {
+  transition: all 0.2s ease-in-out;
+}
+
+.red-bg {
+  background-color: #262626;
+}
+
+.dim {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.32);
+  z-index: 4;
+}
+
+.info {
+  margin-top: 5%;
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.infoView {
+  display: block;
+  position: relative;
+  text-align: center;
+  height: 600px;
+  background-color: #303030;
+  border-radius: 13px;
+  padding: 10px 15px 10px 15px;
+  box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.35);
+  overflow: auto;
+  color: white;
+}
+
+.light-info {
+  background-color: #f8f8ed;
+  color: #262626;
+}
+
+.infoView img {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0.50;
+  cursor: pointer;
+}
+
+.infoView img:hover {
+  opacity: 1.0;
+}
+
+.infoView h1 {
+  font-family: "Bree Serif", serif;
+  font-size: 65px;
+  border-bottom: 4px dotted white;
+  padding-bottom: 15px;
+}
+
+.infoView p {
+  display: inline-block;
+  position: relative;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 19px;
+  line-height: 1.5em;
+  margin-top: 35px;
+}
+
+.infoIcon {
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
+.infoIcon:hover {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.about {
+  margin-left: 2%;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  width: 70px;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
+.about:hover {
+  font-size: 22px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.title {
+  font-size: 75px;
+  font-family: "Bree Serif", serif;
+}
+
+.navigation {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  border-bottom: 3px dotted #505050;
+  /*border: 2px solid #303030;
+  border-radius: 12px;*/
+  color: #505050;
+}
+
+.me {
+  color: #b30000;
+}
+
+.mainHeader {
+  text-align: center;
+}
+
+.mainHeader h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+
+.yearView {
+
+}
+
+.year {
+  color: #505050;
+  margin-top: 50px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.year-bg {
+  background-image: url("http://www.linkapedia.com/resources/images/user-background.jpg");
+  background-position: center left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  opacity: 1.0;
+  transition: all 0.2s ease-in-out;
+}
+
+.year-bg:hover {
+  opacity: 0.65;
+  background-position: center right;
+}
+
+.year h1 {
+  margin-top: 40px;
+  font-family: "Bree Serif", serif;
+  font-size: 100px;
+  color: rgba(255,255,255,0.95);
+  font-weight: 100;
+}
+
+.year h2 {
+  font-family: "Bree Serif", serif;
+  color: #505050;
+  font-size: 60px;
+}
+
+.year h3 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+
+.year img {
+  position: relative;
+  margin-left: 50%;
+  left: -15px;
+  height: 30px;
+  width: 30px;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0.50;
+  cursor: pointer;
+}
+
+.year img:hover {
+  opacity: 1.0;
+}
+
+.month {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 16px;
+  /*border: 0.5px solid rgba(0,0,0,0.30);*/
+  max-width: 90%;
+  padding: 10px;
+  opacity: 0.65;
+}
+
+.month:hover {
+  background-color: #f8f8ed;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.15);
+  opacity: 1.0;
+}
+
+.month1 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 16px;
+  /*border: 0.5px solid rgba(0,0,0,0.30);*/
+  max-width: 90%;
+  padding: 10px;
+  opacity: 0.65;
+}
+
+.month1:hover {
+  background-color: #f8f8ed;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.15);
+  opacity: 1.0;
+}
+
+.dayView {
+  padding: 50px 20px 100px 20px;
+}
+
+.dayView1 {
+  padding: 50px 20px 100px 20px;
+}
+
+.dayCard {
+  display: inline-block;
+  border-radius: 8px;
+  min-width: 220px;
+  padding: 20px 20px 40px 20px;
+  background-color: #f8f8ed;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease-in-out;
+}
+
+.dayCard-night {
+  background-color: #303030;
+  color: #cfcfcf;
+}
+
+.dayCard h2 {
+  font-family: "Bree Serif", serif;
+  font-size: 40px;
+  color: #505050;
+  padding-bottom: 5px;
+  border-bottom: 3px dotted rgba(0,0,0,0.30);
+}
+
+.dayCard h4 {
+  font-family: "Fira Sans", sans-serif;
+  color: #cf1717;
+}
+
+.dayCard p {
+  margin-top: 25px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.btn-edit {
+  background-color: #999;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+.abilities {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.entry1 {
+  width: 100%;
+}
+
+.entry2 {
+  height: 300px;
+  width: 100%;
+}
+
+.entry3 {
+  height: 400px;
+  width: 100%;
+}
+
+.white-text {
+  color: white;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #303030;
+  padding: 15px;
+}
+
+.footerText a {
+  color: #efefef;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.footerText a:hover {
+  color: #505050;
+}
+
+.title-footer {
+  font-size: 40px;
+  font-family: "Bree Serif", serif;
+  color: #efefef;
+}
+
+.footer-nav {
+  padding-top: 20px;
+}
+
+.nav {
+  color: #efefef;
+}
+
+.nav-pills:hover {
+  color: black;
+}
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .infoIcon {
+    margin-left: 20%;
+  }
+
+  .red {
+    display: none;
+    margin-left: -66%;
+    font-size: 10px;
+  }
+
+  .infoIcon {
+    display: none;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .year h2 {
+    font-size: 36px;
+  }
+}
